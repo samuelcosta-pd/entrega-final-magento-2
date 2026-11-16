@@ -1,0 +1,97 @@
+# Ignore everything by default
+*
+
+# Repository files
+!/.gitignore
+!/README.md
+!/compose.yaml
+!/Makefile
+!/composer.json
+
+# Scripts
+!/bin/
+!/bin/**
+
+# Documentation
+!/docs/
+!/docs/**
+
+# Kit de marca e materiais
+!/kit/
+!/kit/**
+
+# Regras do GitHub (CODEOWNERS, template de PR)
+!/.github/
+!/.github/**
+
+# Custom Magento code
+!/src/
+!/src/app/
+!/src/app/*/
+!/src/app/code/
+!/src/app/code/**
+!/src/app/design/
+!/src/app/design/**
+!/src/app/etc/
+!/src/app/etc/config.php
+
+# Composer (versão exata do Magento e da sample data)
+!/src/composer.json
+!/src/composer.lock
+
+# PHPCS / PHPUnit configs na raiz do Magento
+!/src/.phpcs.xml.dist
+!/src/phpcs.xml
+!/src/phpunit.xml*
+!/src/allure/
+!/src/allure/**
+
+# Local / environment files
+.env
+.env.*
+!.env.example
+!/env/
+!/env/**
+!/lib/
+!/lib/**
+
+/src/auth.json
+/src/app/etc/env.php
+
+# Local setup artifacts
+!/compose.versions.yaml
+!/compose.dev.yaml
+!/compose.healthcheck.yaml
+!/compose.dev-linux.yaml
+!/compose.dev-ssh.yaml
+compose.healthcheck.yaml.bak
+docker-magento-rootCA.pem
+rootCA.pem
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+.phpunit.result.cache
+.phpunit.cache/
+.php-cs-fixer.cache
+.phpstan.cache/
+coverage/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+docs/briefing.md
+docs/Frentes.md
